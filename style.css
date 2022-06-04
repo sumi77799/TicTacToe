@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Neonderthaw&family=Oswald:wght@200;500&family=Poppins:wght@100&family=Roboto:ital,wght@0,400;1,100&family=Ubuntu:wght@300;400&display=swap');;
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/46/ac/9e/46ac9e282d3c303934a72d941845785b.gif");
+    background-repeat: no-repeat;
+    background-size: 100%  ;
+    background-color: #6ea3d8;
+    
+}
+#ullu{
+    z-index: -3;
+}
+/* nav{
+    background-color: rgb(55, 187, 165);
+    color: white;
+    height: 50px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;;
+    font-family:'Roboto', sans-serif;
+
+}
+nav ul{
+ list-style-type: none;
+} */
+.gameContainer{
+/* background-color: yellow; */
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.container{
+display: grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
+font-family: 'Roboto', sans-serif;
+
+}
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box:hover{
+    background-color: rgb(221, 194, 226);
+
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.gameInfo h1{
+    font-size: 3rem;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out; 
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 26px;
+    padding: 6px 14px;
+    background-color: rgb(172, 75, 128);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: x-large;
+    cursor: pointer;
+    
+
+}
+.line{
+    background-color: darkgreen;
+    width: 30vw;
+    height: 3px;
+    
+    position: absolute;
+}
+
+.info{
+    font-weight: bold;
+    color: brown;
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 950px)
+{
+.gameContainer{
+    flex-wrap: wrap;
+    width:90%;
+    margin: auto;
+    margin-top: 40px
+
+   
+    
+    
+    };
+    
+    body{
+        background-size: 100% 100%;
+    }
+    .gameInfo{
+        margin-top: 40px;
+    }
+    .gameInfo h1{
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+
+    
+}
